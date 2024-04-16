@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento</title>
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="disenio.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Login</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Cerrar Sesion</a>
+              <!--<a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="container my-3">
+        <div class="row">
+           <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4  py-4 bg-blanco">
+             <h2>Cotizaciones</h2>
+             <form>
+                <div class="mb-3">
+                    <label for="codigo" class="form-label">Codigo</label>
+                    <input type="text" class="form-control" id="codigo" placeholder="Cliente" autofocus>
+                  </div>
+                  <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre Completo">
+                  </div>
+                  <div class="mb-3">
+                    <label for="telefono" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" id="telefono" placeholder="">
+                  </div>
+                  <div class="mb-3">
+                    <label for="fecha" class="form-label">Fecha</label>
+                    <input type="date" class="form-control" id="fecha" placeholder="">
+                  </div>
+                  <div class="mb-3">
+                    <label for="descripcion" class="form-label">Descripcion</label>
+                    <textarea class="form-control" id="descripcion" rows="3"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="cantidad" class="form-label">Cantidad</label>
+                    <input type="number" class="form-control" id="cantidad" placeholder="">
+                  </div>
+                  <div class="mb-3">
+                    <label for="precio" class="form-label">Precio</label>
+                    <input type="text" class="form-control" id="precio" placeholder="L.">
+                  </div>
+                  <div class="mb-3">
+                    <label for="total" class="form-label">Total</label>
+                    <input type="text" class="form-control" id="total" placeholder="L.">
+                  </div>
+             </form>
+             <div class="d-grid gap-2">
+                <button class="btn btn-info" type="button">Guardar</button>
+                <button class="btn btn-secondary" type="button">Limpiar</button>
+              </div>
+           </div> 
+           <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 py-4 bg-blanco">
+            <h2>Lista de Eventos</h2>
+            <table class="table table-striped">
+                <thead>
+                   <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Telefono</th>
+                    <th>Fecha</th>
+                    <th>Descripcion</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Acciones</th>
+                   </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>001</td>
+                    <td>Marvin Castro</td>
+                    <td>95678900</td>
+                    <th>6/06/2024</th>
+                    <td>Evento para una boda</td>
+                    <th>3</th>
+                    <th>L. 40,000 </th>
+                     <th>
+                     <div class="d-grid gap-2">
+                     <button class="btn btn-outline-success" type="button">Eliminar</button>
+                     <button class="btn btn-outline-danger" type="button">Editar</button>
+                     </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>002</td>
+                    <td>Eber Bonilla</td>
+                    <td>95009867</td>
+                    <th>6/08/2026</th>
+                    <td>Fiesta de cumpleanos</td>
+                    <th>1</th>
+                    <th>L. 55,000 </th>
+                    <th>
+                      <div class="d-grid gap-2">
+                      <button class="btn btn-outline-success" type="button">Eliminar</button>
+                      <button class="btn btn-outline-danger" type="button">Editar</button>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>003</td>
+                    <td>Allan Matute</td>
+                    <td>96784567</td>
+                    <th>10/09/2024</th>
+                    <td>Fista de 15 anios</td>
+                    <th>2</th>
+                    <th>L. 30,000 </th>
+                    <th>
+                    <div class="d-grid gap-2">
+                    <button class="btn btn-outline-success" type="button">Eliminar</button>
+                    <button class="btn btn-outline-danger" type="button">Editar</button>
+                    </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>004</td>
+                    <td>Eduardo Carrillo</td>
+                    <td>88780098</td>
+                    <th>08/10/2025</th>
+                    <td>Fiesta de despedida de soltero</td>
+                    <th>1</th>
+                    <th>L. 100,000 </th>
+                    <th>
+                       <div class="d-grid gap-2">
+                       <button class="btn btn-outline-success" type="button">Eliminar</button>
+                       <button class="btn btn-outline-danger" type="button">Editar</button>
+                       </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>005</td>
+                    <td>Monica Gonzalez</td>
+                    <td>96294185</td>
+                    <th>10/10/2050</th>
+                    <td>Fiesta de graduacion</td>
+                    <th>1</th>
+                    <th>L. 45,000</th>
+                    <th>
+                        <div class="d-grid gap-2">
+                        <button class="btn btn-outline-success" type="button">Eliminar</button>
+                        <button class="btn btn-outline-danger" type="button">Editar</button>
+                        </div>
+                    </th>
+                  </tr>
+                </tbody>
+            </table>
+           </div>
+        </div>  
+    </div>
+    <!--Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
