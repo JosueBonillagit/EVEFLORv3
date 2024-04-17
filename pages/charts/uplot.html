@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AdminLTE 3 | uPlot</title>
 
+
+              
+  
+
+
+  
+
+
+
+
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -850,63 +860,337 @@
     </section>
 
     <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-        <!-- AREA CHART -->
-        <div class="card card-primary">
-          <div class="card-header">
-            <h3 class="card-title">Area Chart</h3>
 
-            <div class="card-tools">
-              <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                <i class="fas fa-minus"></i>
-              </button>
-              <button type="button" class="btn btn-tool" data-card-widget="remove">
-                <i class="fas fa-times"></i>
-              </button>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento</title>
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="disenio.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Login</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Cerrar Sesion</a>
+              <!--<a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
             </div>
           </div>
-          <div class="card-body">
-            <div class="chart">
-              <div id="areaChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></div>
-            </div>
-          </div>
-          <!-- /.card-body -->
         </div>
-        <!-- /.card -->
+      </nav>
+    <div class="container my-3">
+        <div class="row">
+           <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4  py-4 bg-blanco">
+             <h2>Cotizaciones</h2>
+             <form>
+                <div class="mb-3">
+                    <label for="codigo" class="form-label">Codigo</label>
+                    <input type="text" class="form-control" id="codigo" placeholder="Cliente" autofocus>
+                  </div>
+                  <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre Completo">
+                  </div>
+                  <div class="mb-3">
+                    <label for="telefono" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" id="telefono" placeholder="">
+                  </div>
+                  <div class="mb-3">
+                    <label for="fecha" class="form-label">Fecha</label>
+                    <input type="date" class="form-control" id="fecha" placeholder="">
+                  </div>
+                  <div class="mb-3">
+                    <label for="descripcion" class="form-label">Descripcion</label>
+                    <textarea class="form-control" id="descripcion" rows="3"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="cantidad" class="form-label">Cantidad</label>
+                    <input type="number" class="form-control" id="cantidad" placeholder="">
+                  </div>
+                  <div class="mb-3">
+                    <label for="precio" class="form-label">Precio</label>
+                    <input type="text" class="form-control" id="precio" placeholder="L.">
+                  </div>
+                  <div class="mb-3">
+                    <label for="total" class="form-label">Total</label>
+                    <input type="text" class="form-control" id="total" placeholder="L.">
+                  </div>
+             </form>
+             <div class="d-grid gap-2">
+                <button class="btn btn-info" type="button">Guardar</button>
+                <button class="btn btn-secondary" type="button">Limpiar</button>
+              </div>
+           </div> 
+           <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 py-4 bg-blanco">
+            <h2>Lista de Eventos</h2>
+            <table class="table table-striped">
+                <thead>
+                   <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Telefono</th>
+                    <th>Fecha</th>
+                    <th>Descripcion</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Acciones</th>
+                   </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>001</td>
+                    <td>Marvin Castro</td>
+                    <td>95678900</td>
+                    <th>6/06/2024</th>
+                    <td>Evento para una boda</td>
+                    <th>3</th>
+                    <th>L. 40,000 </th>
+                     <th>
+                     <div class="d-grid gap-2">
+                     <button class="btn btn-outline-success" type="button">Eliminar</button>
+                     <button class="btn btn-outline-danger" type="button">Editar</button>
+                     </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>002</td>
+                    <td>Eber Bonilla</td>
+                    <td>95009867</td>
+                    <th>6/08/2026</th>
+                    <td>Fiesta de cumpleanos</td>
+                    <th>1</th>
+                    <th>L. 55,000 </th>
+                    <th>
+                      <div class="d-grid gap-2">
+                      <button class="btn btn-outline-success" type="button">Eliminar</button>
+                      <button class="btn btn-outline-danger" type="button">Editar</button>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>003</td>
+                    <td>Allan Matute</td>
+                    <td>96784567</td>
+                    <th>10/09/2024</th>
+                    <td>Fista de 15 anios</td>
+                    <th>2</th>
+                    <th>L. 30,000 </th>
+                    <th>
+                    <div class="d-grid gap-2">
+                    <button class="btn btn-outline-success" type="button">Eliminar</button>
+                    <button class="btn btn-outline-danger" type="button">Editar</button>
+                    </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>004</td>
+                    <td>Eduardo Carrillo</td>
+                    <td>88780098</td>
+                    <th>08/10/2025</th>
+                    <td>Fiesta de despedida de soltero</td>
+                    <th>1</th>
+                    <th>L. 100,000 </th>
+                    <th>
+                       <div class="d-grid gap-2">
+                       <button class="btn btn-outline-success" type="button">Eliminar</button>
+                       <button class="btn btn-outline-danger" type="button">Editar</button>
+                       </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>005</td>
+                    <td>Monica Gonzalez</td>
+                    <td>96294185</td>
+                    <th>10/10/2050</th>
+                    <td>Fiesta de graduacion</td>
+                    <th>1</th>
+                    <th>L. 45,000</th>
+                    <th>
+                        <div class="d-grid gap-2">
+                        <button class="btn btn-outline-success" type="button">Eliminar</button>
+                        <button class="btn btn-outline-danger" type="button">Editar</button>
+                        </div>
+                    </th>
+                  </tr>
+                </tbody>
+            </table>
+           </div>
+        </div>  
+    </div>
+    <!--Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-        <!-- LINE CHART -->
-        <div class="card card-info">
-          <div class="card-header">
-            <h3 class="card-title">Line Chart</h3>
 
-            <div class="card-tools">
-              <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                <i class="fas fa-minus"></i>
-              </button>
-              <button type="button" class="btn btn-tool" data-card-widget="remove">
-                <i class="fas fa-times"></i>
-              </button>
-            </div>
-          </div>
-          <div class="card-body">
-            <div class="chart">
-              <div id="lineChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></div>
-            </div>
-          </div>
-          <!-- /.card-body -->
-        </div>
-        <!-- /.card -->
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
+
+
+
+
+
+<!-- TABLE: LATEST ORDERS -->
+<div class="card">
+  <div class="card-header border-transparent">
+    <h3 class="card-title">Listado de Ordenes de compra</h3>
+    <!-- <h3 class="card-title">Latest Orders</h3> -->
+
+    <div class="card-tools">
+      <button type="button" class="btn btn-tool" data-card-widget="collapse">
+        <i class="fas fa-minus"></i>
+      </button>
+      <button type="button" class="btn btn-tool" data-card-widget="remove">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
   </div>
-  <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <div class="float-right d-none d-sm-block">
+  <!-- /.card-header -->
+  <div class="card-body p-0">
+    <div class="table-responsive">
+      <table class="table m-0">
+        <thead>
+        <tr>
+          <th>Orden nuero</th>
+          <th>Descripcion de pedido</th>
+          <th>Estatus</th>
+          <th>Monto </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><a href="pages/examples/invoice.html">OR9842</a></td>
+          <td>Ramo de 12 rosas rojas, base cristal torneado, color azul</td>
+          <td><span class="badge badge-success">Enviado</span></td>
+          <td>
+            <div class="sparkbar" data-color="#00a65a" data-height="20">L 1,200</div>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="pages/examples/invoice.html">OR1848</a></td>
+          <td>Arreglo 18 Tulipanes, base madera, papel claro</td>
+          <td><span class="badge badge-warning">Pendiente</span></td>
+          <td>
+            <div class="sparkbar" data-color="#f39c12" data-height="20">L 1,700</div>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="pages/examples/invoice.html">OR7429</a></td>
+          <td>24 Claveles , base cristal, papel traslucido</td>
+          <td><span class="badge badge-danger">Entregado</span></td>
+          <td>
+            <div class="sparkbar" data-color="#f56954" data-height="20">L 3,670 </div>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="pages/examples/invoice.html">OR7429</a></td>
+          <td>32 Girasoles, base madera</td>
+          <td><span class="badge badge-info">En proceso </span></td>
+          <td>
+            <div class="sparkbar" data-color="#00c0ef" data-height="20">L 4,300 </div>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="pages/examples/invoice.html">OR1848</a></td>
+          <td>Amapola 2 kilos  </td>
+          <td><span class="badge badge-warning">Pendiente</span></td>
+          <td>
+            <div class="sparkbar" data-color="#f39c12" data-height="20">$ 1,500 </div>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="pages/examples/invoice.html">OR7429</a></td>
+          <td> 2 Orquideas  </td>
+          <td><span class="badge badge-danger">Entregado</span></td>
+          <td>
+            <div class="sparkbar" data-color="#f56954" data-height="20">L 600.00 </div>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="pages/examples/invoice.html">OR9842</a></td>
+          <td>Margaritas ramo 24,  base cristal traslucido</td>
+          <td><span class="badge badge-success">Enviado</span></td>
+          <td>
+            <div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- /.table-responsive -->
+  </div>
+  <!-- /.card-body -->
+  <div class="card-footer clearfix">
+    <a href="javascript:void(0)" class="btn btn-sm btn-info float-left">Nuevo pedido</a>
+    <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-right">Ver todos los pedidos</a>
+  </div>
+  <!-- /.card-footer -->
+</div>
+<!-- /.card -->
+</div>
+<!-- /.col -->
+
+<div class="col-md-4">
+<!-- Info Boxes Style 2 -->
+<div class="info-box mb-3 bg-warning">
+  <span class="info-box-icon"><i class="fas fa-tag"></i></span>
+
+  <div class="info-box-content">
+    <span class="info-box-text">Inventory</span>
+    <span class="info-box-number">5,200</span>
+  </div>
+  <!-- /.info-box-content -->
+</div>
+<!-- /.info-box -->
+<div class="info-box mb-3 bg-success">
+  <span class="info-box-icon"><i class="far fa-heart"></i></span>
+
+  <div class="info-box-content">
+    <span class="info-box-text">Mentions</span>
+    <span class="info-box-number">92,050</span>
+  </div>
+  <!-- /.info-box-content -->
+</div>
+<!-- /.info-box -->
+<div class="info-box mb-3 bg-danger">
+  <span class="info-box-icon"><i class="fas fa-cloud-download-alt"></i></span>
+
+  <div class="info-box-content">
+    <span class="info-box-text">Downloads</span>
+    <span class="info-box-number">114,381</span>
+  </div>
+  <!-- /.info-box-content -->
+</div>
+<!-- /.info-box -->
+<div class="info-box mb-3 bg-info">
+  <span class="info-box-icon"><i class="far fa-comment"></i></span>
+
+  <div class="info-box-content">
+    <span class="info-box-text">Direct Messages</span>
+    <span class="info-box-number">163,921</span>
+  </div>
+  <!-- /.info-box-content -->
+</div>
+<!-- /.info-box -->
+
+
+
+
+
+
+
+
+
       <b>Version</b> 3.2.0
     </div>
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">EVEFLOR</a>.</strong> All rights reserved.
   </footer>
 
   <!-- Control Sidebar -->
