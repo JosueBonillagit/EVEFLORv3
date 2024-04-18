@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Inline Charts</title>
+  <title>Crear Cotizaciones</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -73,10 +73,12 @@
                 <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
               </div>
             </div>
+
             <!-- Message End -->
           </a>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
+
             <!-- Message Start -->
             <div class="media">
               <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
@@ -105,6 +107,7 @@
                 <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
               </div>
             </div>
+
             <!-- Message End -->
           </a>
           <div class="dropdown-divider"></div>
@@ -222,15 +225,7 @@
             <a href="../widgets.html" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Widgets
-                <span class="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
-              <p>
+                
                 Layout Options
                 <i class="fas fa-angle-left right"></i>
                 <span class="badge badge-info right">6</span>
@@ -291,7 +286,7 @@
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
-                Charts
+                Menú de Usuario
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -311,7 +306,7 @@
               <li class="nav-item">
                 <a href="inline.html" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Inline</p>
+                  <p>Crear Cotizaciones</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -834,12 +829,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Inline Charts</h1>
+            <h1>Crear Cotizaciones</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Inline Charts</li>
+              <li class="breadcrumb-item active">Crear Cotizaciones</li>
             </ol>
           </div>
         </div>
@@ -852,263 +847,242 @@
         <!-- row -->
         <div class="row">
           <div class="col-12">
+            
             <!-- jQuery Knob -->
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">
                   <i class="far fa-chart-bar"></i>
-                  jQuery Knob
+                  Resumen
                 </h3>
-
-                <div class="card-tools">
-                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                  <button type="button" class="btn btn-tool" data-card-widget="remove">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
+              
               </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-6 col-md-3 text-center">
-                    <input type="text" class="knob" value="30" data-width="90" data-height="90" data-fgColor="#3c8dbc">
+              <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cotizador - MUSA EVENTOS</title>
+  <link rel="stylesheet" href="cotizaciones.css">
 
-                    <div class="knob-label">New Visitors</div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-6 col-md-3 text-center">
-                    <input type="text" class="knob" value="70" data-width="90" data-height="90" data-fgColor="#f56954">
-
-                    <div class="knob-label">Bounce Rate</div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-6 col-md-3 text-center">
-                    <input type="text" class="knob" value="-80" data-min="-150" data-max="150" data-width="90"
-                           data-height="90" data-fgColor="#00a65a">
-
-                    <div class="knob-label">Server Load</div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-6 col-md-3 text-center">
-                    <input type="text" class="knob" value="40" data-width="90" data-height="90" data-fgColor="#00c0ef">
-
-                    <div class="knob-label">Disk Space</div>
-                  </div>
-                  <!-- ./col -->
-                </div>
-                <!-- /.row -->
-
-                <div class="row">
-                  <div class="col-6 text-center">
-                    <input type="text" class="knob" value="90" data-width="90" data-height="90" data-fgColor="#932ab6">
-
-                    <div class="knob-label">Bandwidth</div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-6 text-center">
-                    <input type="text" class="knob" value="50" data-width="90" data-height="90" data-fgColor="#39CCCC">
-
-                    <div class="knob-label">CPU</div>
-                  </div>
-                  <!-- ./col -->
-                </div>
-                <!-- /.row -->
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-          </div>
-          <!-- /.col -->
+</head>
+<body> 
+<section id="cotizador">
+    <div class="container">
+      <form id="cotizacion-form">
+        
+         <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido">
         </div>
-        <!-- /.row -->
+        
+        <div class="form-group">
+          <label for="tipo_base">Tipo de Bases:</label>
+          <select id="tipo_base" name="tipo_base">
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="Base de Cristal o Vidrio">Base de Cristal o Vidrio (L150.00)</option>
+            <option value="Base de Cerámica o Porcelana">Base de Cerámica o Porcelana (L160.00)</option>
+            <option value="Base de Metal">Base de Metal (L120.00)</option>
+            <option value="Base de Madera">Base de Madera (L100.00)</option>
+            <option value="Base de Plástico o Acrílico">Base de Plástico o Acrílico (L80.00)</option>
+            <option value="Bases de Cartón o Papel Maché">Bases de Cartón o Papel Maché (L110.00)</option>
+            <option value="Bases de Espuma Floral">Bases de Espuma Floral (L80.00)</option>
+            
+          </select>
+        </div> 
 
-        <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">
-                  <i class="far fa-chart-bar"></i>
-                  jQuery Knob Different Sizes
-                </h3>
-
-                <div class="card-tools">
-                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                  <button type="button" class="btn btn-tool" data-card-widget="remove">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-6 col-md-3 text-center">
-                    <input type="text" class="knob" value="30" data-width="90" data-height="90" data-fgColor="#3c8dbc"
-                           data-readonly="true">
-
-                    <div class="knob-label">data-width="90"</div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-6 col-md-3 text-center">
-                    <input type="text" class="knob" value="30" data-width="120" data-height="120"
-                           data-fgColor="#f56954">
-
-                    <div class="knob-label">data-width="120"</div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-6 col-md-3 text-center">
-                    <input type="text" class="knob" value="30" data-thickness="0.1" data-width="90" data-height="90"
-                           data-fgColor="#00a65a">
-
-                    <div class="knob-label">data-thickness="0.1"</div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-6 col-md-3 text-center">
-                    <input type="text" class="knob" data-thickness="0.2" data-angleArc="250" data-angleOffset="-125"
-                           value="30" data-width="120" data-height="120" data-fgColor="#00c0ef">
-
-                    <div class="knob-label">data-angleArc="250"</div>
-                  </div>
-                  <!-- ./col -->
-                </div>
-                <!-- /.row -->
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
+        <div class="form-group">
+            <label for="cantidad1">Cantidad:</label>
+            <input type="number" id="cantidad1" name="cantidad1" min="1" value="">
           </div>
-          <!-- /.col -->
+
+        <div class="form-group">
+          <label for="tipo_flor">Tipo de Flores:</label>
+          <select id="tipo_flor" name="tipo_flor">
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="rosas">Rosas (L50.00)</option>
+            <option value="lirios">Lirios (L60.00)</option>
+            <option value="tulipanes">Tulipanes (L40.00)</option>
+            <option value="margaritas">Margaritas (L36.00)</option>
+            <option value="girasoles">Girasoles (L80.00)</option>
+            <option value="orquídeas">Orquídeas (L1,000.00)</option>
+            <option value="claveles">Claveles (L136.00)</option>
+            <option value="lavanda">Lavanda (L100.00)</option>
+          </select>
+        </div> 
+        
+        <div class="form-group">
+          <label for="cantidad2">Cantidad:</label>
+          <input type="number" id="cantidad2" name="cantidad2" min="1" value="">
         </div>
-        <!-- /.row -->
+        
+        <div class="form-group">
+          <label for="ocasion">Ocasión:</label>
+          <input type="text" id="ocasion" name="ocasion" placeholder="Cumpleaños, Aniversario, etc.">
+        </div>
+        
+        <div class="form-group">
+            <label for="adicionales">Adicionales:</label>
+            <select id="adicionales" name="adicionales">
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option value="Chocolates">Chocolates (L50.00)</option>
+              <option value="Bombones">Bombones (L10.00)</option>
+              <option value="Botella de Vino">Botella de Vino (L300.00)</option>
+              <option value="Peluches">Peluches (L200.00)</option>
+              <option value="Tajeta de felicitaciones">Tajerta de Felicitaciones (L10.00)</option>
+            </select>
+          </div> 
 
-        <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">
-                  <i class="far fa-chart-bar"></i>
-                  jQuery Knob Tron Style
-                </h3>
-
-                <div class="card-tools">
-                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                  <button type="button" class="btn btn-tool" data-card-widget="remove">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-6 col-md-3 text-center">
-                    <input type="text" class="knob" value="80" data-skin="tron" data-thickness="0.2" data-width="90"
-                           data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
-
-                    <div class="knob-label">data-width="90"</div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-6 col-md-3 text-center">
-                    <input type="text" class="knob" value="60" data-skin="tron" data-thickness="0.2" data-width="120"
-                           data-height="120" data-fgColor="#f56954">
-
-                    <div class="knob-label">data-width="120"</div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-6 col-md-3 text-center">
-                    <input type="text" class="knob" value="10" data-skin="tron" data-thickness="0.1" data-width="90"
-                           data-height="90" data-fgColor="#00a65a">
-
-                    <div class="knob-label">data-thickness="0.1"</div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-6 col-md-3 text-center">
-                    <input type="text" class="knob" value="100" data-skin="tron" data-thickness="0.2"
-                           data-angleArc="250" data-angleOffset="-125" data-width="120" data-height="120"
-                           data-fgColor="#00c0ef">
-
-                    <div class="knob-label">data-angleArc="250"</div>
-                  </div>
-                  <!-- ./col -->
-                </div>
-                <!-- /.row -->
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
+          <div class="form-group">
+            <label for="cantidad3">Cantidad:</label>
+            <input type="number" id="cantidad3" name="cantidad3" min="1" value="">
           </div>
-          <!-- /.col -->
+
+        <div class="form-group">
+          <label for="fecha_entrega">Fecha de Entrega:</label>
+          <input type="date" id="fecha_entrega" name="fecha_entrega" required>
         </div>
-        <!-- /.row -->
-
-        <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">
-                  <i class="far fa-chart-bar"></i>
-                  Sparklines
-                </h3>
-
-                <div class="card-tools">
-                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                  <button type="button" class="btn btn-tool" data-card-widget="remove">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-4 text-center">
-                    <div id="sparkline-1"></div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-4 text-center">
-                    <div id="sparkline-2"></div>
-                  </div>
-                  <!-- ./col -->
-                  <div class="col-4 text-center">
-                    <div id="sparkline-3"></div>
-                  </div>
-                  <!-- ./col -->
-                </div>
-                <!-- /.row -->
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-          </div>
-          <!-- /.col -->
-        </div>
-        <!-- /.row -->
-
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.2.0
+        
+        <button type="submit">Generar Cotización</button>
+        <button type="button" onclick="limpiarFormulario()">Limpiar</button>
+      </form>
+      
+      <div id="resultado_cotizacion" class="resultado">
+        <!-- Aquí se mostrará la cotización generada automáticamente -->
+      </div>
     </div>
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </section>
+  
+  <footer>
   </footer>
+</body>
+</html>
 
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
-</div>
-<!-- ./wrapper -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('cotizacion-form');
+    const resultadoCotizacion = document.getElementById('resultado_cotizacion');
 
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Evitar que el formulario se envíe
+
+      const nombre = document.getElementById('nombre').value;
+      const tipoBase = document.getElementById('tipo_base').value;
+      const tipoFlor = document.getElementById('tipo_flor').value;
+      const cantidad1 = parseInt(document.getElementById('cantidad1').value);
+      const cantidad2 = parseInt(document.getElementById('cantidad2').value);
+      const cantidad3 = parseInt(document.getElementById('cantidad3').value);
+      const ocasion = document.getElementById('ocasion').value;
+      const adicionales = document.getElementById('adicionales').value;
+      const fechaEntrega = document.getElementById('fecha_entrega').value;
+       // Lógica de cotización por base (en lempiras)
+       const precioPorBase = obtenerPrecioPorBase(tipoBase);
+      const precioTotal2 = precioPorBase * cantidad1;
+
+      // Lógica de cotización por adiciones (en lempiras)
+      const precioPorAdicionales = obtenerPrecioPoradicionales(adicionales);
+      const precioTotal3 = precioPorAdicionales * cantidad3;
+      
+      // Lógica de cotización por flores (en lempiras)
+      const precioPorFlor = obtenerPrecioPorFlor(tipoFlor);
+      const precioTotal = (precioPorFlor * cantidad2) + precioTotal2 + precioTotal3;
+      
+      // Mostrar la cotización en la página
+      resultadoCotizacion.innerHTML = `
+          
+          <h3>Cotización</h3>
+          <p><strong>Nombre:</strong> ${nombre}</p>
+          <p><strong>Tipo de Base:</strong> ${tipoBase}</p>
+          <p><strong>Cantidad:</strong> ${cantidad1}</p>
+          <p><strong>Tipo de Flor:</strong> ${tipoFlor}</p>
+          <p><strong>Cantidad:</strong> ${cantidad2}</p>
+          <p><strong>Ocasión:</strong> ${ocasion}</p>
+          <p><strong>Adicionales:</strong> ${adicionales}</p>
+          <p><strong>Cantidad:</strong> ${cantidad3}</p>
+          <p><strong>Fecha de Entrega:</strong> ${fechaEntrega}</p>
+          <p><strong>Precio Total:</strong> L.${precioTotal.toFixed(2)}</p>
+        `;
+    });
+    // Función para obtener el precio por Base (en lempiras)
+    function obtenerPrecioPorBase(tipoBase) {
+      switch (tipoBase) {
+        case 'Base de Cristal o Vidrio':
+          return 150.0; // Precio por base de cristal o vidrio en lempiras
+        case 'Base de Cerámica o Porcelana':
+          return 160.0; // Precio por base de cerámica o Porcelana en lempiras
+        case 'Base de Metal':
+          return 120.0; // Precio por base de metal en lempiras
+        case 'Base de Madera':
+          return 100.0; // Precio por base de madera en lempiras
+        case 'Base de Plástico o Acrílico':
+          return 80.0; // Precio por base de plástico o acrílico en lempiras
+        case 'Bases de Cartón o Papel Maché':
+          return 110.0; // Precio por bases de cartón o papel maché en lempiras
+        case 'Bases de Espuma Floral':
+          return 80.0; // Precio por bases de espuma floral en lempiras      
+        default:
+          return 0;
+      }   
+    }
+    // Función para obtener el precio por flor (en lempiras)
+    function obtenerPrecioPorFlor(tipoFlor) {
+      switch (tipoFlor) {
+        case 'rosas':
+          return 50.0; // Precio por rosa en lempiras
+        case 'lirios':
+          return 60.0; // Precio por lirio en lempiras
+        case 'tulipanes':
+          return 40.0; // Precio por tulipán en lempiras
+        case 'margaritas':
+          return 36.0; // Precio por margarita en lempiras
+        case 'girasoles':
+          return 80.0; // Precio por girasoles en lempiras
+        case 'orquídeas':
+          return 1000.0; // Precio por orquídeas en lempiras
+        case 'claveles':
+          return 136.0; // Precio por claveles en lempiras
+        case 'Lavanda':
+          return 100.0; // Precio por lavanda en lempiras
+        default:
+          return 0;
+      }
+    }
+    // Función para obtener el precio de adiciones (en lempiras)
+        function obtenerPrecioPoradicionales(adicionales) {
+      switch (adicionales) {
+        case 'Chocolates':
+          return 50.0; // Precio por chocolates en lempiras
+        case 'Bombones':
+          return 10.0; // Precio por bombones en lempiras
+        case 'Botella de Vino':
+          return 300.0; // Precio por botella de vino metal en lempiras
+        case 'Peluches':
+          return 200.0; // Precio por peluches en lempiras
+        case 'Tarjeta de Felicitaciones':
+          return 10.0; // Precio por tarjeta de felicitaciones en lempiras     
+        default:
+          return 0;
+      }   
+    }
+
+  });
+
+  // Función para limpiar el formulario
+  function limpiarFormulario() {
+    //var form = document.getElementById('cotizacion-form').value();
+      //form.reset();
+      document.getElementById('fecha_entrega').value = ("");
+      document.getElementById('nombre').value = ("");
+      document.getElementById('tipo_base').value = ("");
+      document.getElementById('tipo_flor').value = ("");
+      document.getElementById('cantidad1').value = ("");
+      document.getElementById('cantidad2').value = ("");
+      document.getElementById('cantidad3').value = ("");
+      document.getElementById('ocasion').value = ("");
+      document.getElementById('adicionales').value = ("");
+      //innerHTML = ''; // Limpiar el resultado de la cotización
+    }
+</script>
 <!-- jQuery -->
 <script src="../../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
